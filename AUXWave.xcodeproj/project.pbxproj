@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE2F495A1AA2C8D7009B2FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F49591AA2C8D7009B2FDE /* AppDelegate.swift */; };
+		AE2F495C1AA2C8D7009B2FDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F495B1AA2C8D7009B2FDE /* ViewController.swift */; };
+		AE2F495F1AA2C8D7009B2FDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2F495D1AA2C8D7009B2FDE /* Main.storyboard */; };
+		AE2F49611AA2C8D7009B2FDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2F49601AA2C8D7009B2FDE /* Images.xcassets */; };
+		AE2F49641AA2C8D7009B2FDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE2F49621AA2C8D7009B2FDE /* LaunchScreen.xib */; };
+		AE2F49701AA2C8D7009B2FDE /* AUXWaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F496F1AA2C8D7009B2FDE /* AUXWaveTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE2F496A1AA2C8D7009B2FDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE2F494C1AA2C8D7009B2FDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE2F49531AA2C8D7009B2FDE;
+			remoteInfo = AUXWave;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE2F49541AA2C8D7009B2FDE /* AUXWave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AUXWave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2F49581AA2C8D7009B2FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE2F49591AA2C8D7009B2FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE2F495B1AA2C8D7009B2FDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE2F495E1AA2C8D7009B2FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE2F49601AA2C8D7009B2FDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AE2F49631AA2C8D7009B2FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AE2F49691AA2C8D7009B2FDE /* AUXWaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AUXWaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2F496E1AA2C8D7009B2FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE2F496F1AA2C8D7009B2FDE /* AUXWaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUXWaveTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE2F49511AA2C8D7009B2FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2F49661AA2C8D7009B2FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE2F494B1AA2C8D7009B2FDE = {
+			isa = PBXGroup;
+			children = (
+				AE2F49561AA2C8D7009B2FDE /* AUXWave */,
+				AE2F496C1AA2C8D7009B2FDE /* AUXWaveTests */,
+				AE2F49551AA2C8D7009B2FDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE2F49551AA2C8D7009B2FDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F49541AA2C8D7009B2FDE /* AUXWave.app */,
+				AE2F49691AA2C8D7009B2FDE /* AUXWaveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE2F49561AA2C8D7009B2FDE /* AUXWave */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F49591AA2C8D7009B2FDE /* AppDelegate.swift */,
+				AE2F495B1AA2C8D7009B2FDE /* ViewController.swift */,
+				AE2F495D1AA2C8D7009B2FDE /* Main.storyboard */,
+				AE2F49601AA2C8D7009B2FDE /* Images.xcassets */,
+				AE2F49621AA2C8D7009B2FDE /* LaunchScreen.xib */,
+				AE2F49571AA2C8D7009B2FDE /* Supporting Files */,
+			);
+			path = AUXWave;
+			sourceTree = "<group>";
+		};
+		AE2F49571AA2C8D7009B2FDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F49581AA2C8D7009B2FDE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE2F496C1AA2C8D7009B2FDE /* AUXWaveTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F496F1AA2C8D7009B2FDE /* AUXWaveTests.swift */,
+				AE2F496D1AA2C8D7009B2FDE /* Supporting Files */,
+			);
+			path = AUXWaveTests;
+			sourceTree = "<group>";
+		};
+		AE2F496D1AA2C8D7009B2FDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F496E1AA2C8D7009B2FDE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE2F49531AA2C8D7009B2FDE /* AUXWave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE2F49731AA2C8D7009B2FDE /* Build configuration list for PBXNativeTarget "AUXWave" */;
+			buildPhases = (
+				AE2F49501AA2C8D7009B2FDE /* Sources */,
+				AE2F49511AA2C8D7009B2FDE /* Frameworks */,
+				AE2F49521AA2C8D7009B2FDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AUXWave;
+			productName = AUXWave;
+			productReference = AE2F49541AA2C8D7009B2FDE /* AUXWave.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE2F49681AA2C8D7009B2FDE /* AUXWaveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE2F49761AA2C8D7009B2FDE /* Build configuration list for PBXNativeTarget "AUXWaveTests" */;
+			buildPhases = (
+				AE2F49651AA2C8D7009B2FDE /* Sources */,
+				AE2F49661AA2C8D7009B2FDE /* Frameworks */,
+				AE2F49671AA2C8D7009B2FDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE2F496B1AA2C8D7009B2FDE /* PBXTargetDependency */,
+			);
+			name = AUXWaveTests;
+			productName = AUXWaveTests;
+			productReference = AE2F49691AA2C8D7009B2FDE /* AUXWaveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE2F494C1AA2C8D7009B2FDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "UW-AppDEV";
+				TargetAttributes = {
+					AE2F49531AA2C8D7009B2FDE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					AE2F49681AA2C8D7009B2FDE = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = AE2F49531AA2C8D7009B2FDE;
+					};
+				};
+			};
+			buildConfigurationList = AE2F494F1AA2C8D7009B2FDE /* Build configuration list for PBXProject "AUXWave" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE2F494B1AA2C8D7009B2FDE;
+			productRefGroup = AE2F49551AA2C8D7009B2FDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE2F49531AA2C8D7009B2FDE /* AUXWave */,
+				AE2F49681AA2C8D7009B2FDE /* AUXWaveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE2F49521AA2C8D7009B2FDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2F495F1AA2C8D7009B2FDE /* Main.storyboard in Resources */,
+				AE2F49641AA2C8D7009B2FDE /* LaunchScreen.xib in Resources */,
+				AE2F49611AA2C8D7009B2FDE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2F49671AA2C8D7009B2FDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE2F49501AA2C8D7009B2FDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2F495C1AA2C8D7009B2FDE /* ViewController.swift in Sources */,
+				AE2F495A1AA2C8D7009B2FDE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2F49651AA2C8D7009B2FDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2F49701AA2C8D7009B2FDE /* AUXWaveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE2F496B1AA2C8D7009B2FDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE2F49531AA2C8D7009B2FDE /* AUXWave */;
+			targetProxy = AE2F496A1AA2C8D7009B2FDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE2F495D1AA2C8D7009B2FDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE2F495E1AA2C8D7009B2FDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE2F49621AA2C8D7009B2FDE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE2F49631AA2C8D7009B2FDE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE2F49711AA2C8D7009B2FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE2F49721AA2C8D7009B2FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE2F49741AA2C8D7009B2FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AUXWave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE2F49751AA2C8D7009B2FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AUXWave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AE2F49771AA2C8D7009B2FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AUXWaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AUXWave.app/AUXWave";
+			};
+			name = Debug;
+		};
+		AE2F49781AA2C8D7009B2FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AUXWaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AUXWave.app/AUXWave";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE2F494F1AA2C8D7009B2FDE /* Build configuration list for PBXProject "AUXWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2F49711AA2C8D7009B2FDE /* Debug */,
+				AE2F49721AA2C8D7009B2FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE2F49731AA2C8D7009B2FDE /* Build configuration list for PBXNativeTarget "AUXWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2F49741AA2C8D7009B2FDE /* Debug */,
+				AE2F49751AA2C8D7009B2FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE2F49761AA2C8D7009B2FDE /* Build configuration list for PBXNativeTarget "AUXWaveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2F49771AA2C8D7009B2FDE /* Debug */,
+				AE2F49781AA2C8D7009B2FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE2F494C1AA2C8D7009B2FDE /* Project object */;
+}
