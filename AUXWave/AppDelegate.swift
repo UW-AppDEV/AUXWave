@@ -11,8 +11,6 @@ import UIKit
 let kServiceTypeAUXWave = "AUXWave"
 let kDefaultDJImage = UIImage(named: "AUXWaveDefaultDJ")
 
-var facebookProfilePictureCache: [String : UIImage] = [:]
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -50,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidReceiveMemoryWarning(application: UIApplication) {
         // Dispose of any resources that can be recreated.
         
-        facebookProfilePictureCache.removeAll(keepCapacity: false)
+        FacebookProfileImageView.clearImageCache()
     }
 }
 

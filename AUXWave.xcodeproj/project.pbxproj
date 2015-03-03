@@ -23,6 +23,7 @@
 		AE2F498F1AA2D984009B2FDE /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2F498E1AA2D984009B2FDE /* MultipeerConnectivity.framework */; };
 		AE2F49911AA2DD6C009B2FDE /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F49901AA2DD6C009B2FDE /* ScannerViewController.swift */; };
 		AE2F49C51AA39985009B2FDE /* ScannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F49C41AA39985009B2FDE /* ScannerTableViewCell.swift */; };
+		AE339BBE1AA61FA4000CB4CC /* FacebookProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE339BBD1AA61FA4000CB4CC /* FacebookProfileImageView.swift */; };
 		AE8B74B11AA56BBE00D61DD9 /* AUXWaveDefaultDJ.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8B74B01AA56BBE00D61DD9 /* AUXWaveDefaultDJ.png */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		AE2F498E1AA2D984009B2FDE /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		AE2F49901AA2DD6C009B2FDE /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		AE2F49C41AA39985009B2FDE /* ScannerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerTableViewCell.swift; sourceTree = "<group>"; };
+		AE339BBD1AA61FA4000CB4CC /* FacebookProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookProfileImageView.swift; sourceTree = "<group>"; };
 		AE8B74B01AA56BBE00D61DD9 /* AUXWaveDefaultDJ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AUXWaveDefaultDJ.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 				AE2F49901AA2DD6C009B2FDE /* ScannerViewController.swift */,
 				AE2F49C41AA39985009B2FDE /* ScannerTableViewCell.swift */,
 				AE2641601AA3D79A00EC9AAC /* DJInformationViewController.swift */,
+				AE339BBD1AA61FA4000CB4CC /* FacebookProfileImageView.swift */,
 				AE2F495D1AA2C8D7009B2FDE /* Main.storyboard */,
 				AE2F49601AA2C8D7009B2FDE /* Images.xcassets */,
 				AE2F49621AA2C8D7009B2FDE /* LaunchScreen.xib */,
@@ -265,6 +268,7 @@
 				AE2F495A1AA2C8D7009B2FDE /* AppDelegate.swift in Sources */,
 				AE2F49C51AA39985009B2FDE /* ScannerTableViewCell.swift in Sources */,
 				AE2641611AA3D79A00EC9AAC /* DJInformationViewController.swift in Sources */,
+				AE339BBE1AA61FA4000CB4CC /* FacebookProfileImageView.swift in Sources */,
 				AE2F49911AA2DD6C009B2FDE /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
