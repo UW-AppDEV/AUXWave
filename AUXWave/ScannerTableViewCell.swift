@@ -11,7 +11,7 @@ import QuartzCore
 
 class ScannerTableViewCell: UITableViewCell {
 
-    @IBOutlet var djImageView: UIImageView?
+    @IBOutlet var djImageView: FacebookProfileImageView?
     @IBOutlet var djLabel: UILabel?
     
     override func awakeFromNib() {

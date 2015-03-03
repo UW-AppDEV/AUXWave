@@ -14,10 +14,11 @@ class DJInformationViewController: UIViewController, MPMediaPickerControllerDele
 
     let mediaPickerController = MPMediaPickerController(mediaTypes: MPMediaType.Music)
     
-    @IBOutlet var djImageView: UIImageView?
+    @IBOutlet var djImageView: FacebookProfileImageView?
     @IBOutlet var djLabel: UILabel?
     
     var djImage: UIImage?
+    var djFacebookID: String?
     var djName: String?
     
     var peerID: MCPeerID?
@@ -36,6 +37,7 @@ class DJInformationViewController: UIViewController, MPMediaPickerControllerDele
         }
         
         djImageView?.image = djImage
+        djImageView?.facebookID = djFacebookID
         djLabel?.text = djName
         
     }

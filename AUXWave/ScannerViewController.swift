@@ -64,6 +64,7 @@ class ScannerViewController: UITableViewController, UITableViewDataSource, MCNea
             
             if let selectedCell = sender as? ScannerTableViewCell {
                 djInformationViewController.djImage = selectedCell.djImageView?.image
+                djInformationViewController.djFacebookID = selectedCell.djImageView?.facebookID
                 djInformationViewController.djName = selectedCell.djLabel?.text
             }
             
@@ -87,36 +88,7 @@ class ScannerViewController: UITableViewController, UITableViewDataSource, MCNea
         
         // Load information from Facebook
         if let facebookID = discoveryInfo?["facebookID"] as? String {
-            
-            if let image = facebookProfilePictureCache[facebookID] {
-                cell.djImageView?.image = image
-            } else {
-                
-                // Load profile picture asynchronously
-                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-                    
-                    let facebookProfilePictureURLString = "http://graph.facebook.com/\(facebookID)/picture?height=256&width=256"
-                    
-                    if let facebookProfilePictureURL = NSURL(string: facebookProfilePictureURLString) {
-                        if let facebookProfilePictureData = NSData(contentsOfURL: facebookProfilePictureURL) {
-                            
-                            let facebookProfilePicture = UIImage(data: facebookProfilePictureData)
-                            
-                            // Update UI on main thread
-                            dispatch_async(dispatch_get_main_queue(), {
-                                if let image = facebookProfilePicture {
-                                    facebookProfilePictureCache[facebookID] = image
-                                    cell.djImageView?.image = image
-                                }
-                            })
-                            
-                        }
-                    }
-                    
-                })
-                
-            }
-            
+            cell.djImageView?.facebookID = facebookID
         }
         
         return cell
