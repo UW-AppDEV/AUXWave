@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2641611AA3D79A00EC9AAC /* DJInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2641601AA3D79A00EC9AAC /* DJInformationViewController.swift */; };
+		AE2641671AA4132900EC9AAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2641661AA4132900EC9AAC /* QuartzCore.framework */; };
+		AE26416D1AA4ECE200EC9AAC /* Broadway_-_Contexture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE26416C1AA4ECE200EC9AAC /* Broadway_-_Contexture.jpg */; };
 		AE2F495A1AA2C8D7009B2FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F49591AA2C8D7009B2FDE /* AppDelegate.swift */; };
 		AE2F495C1AA2C8D7009B2FDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F495B1AA2C8D7009B2FDE /* ViewController.swift */; };
 		AE2F495F1AA2C8D7009B2FDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2F495D1AA2C8D7009B2FDE /* Main.storyboard */; };
@@ -15,6 +18,12 @@
 		AE2F49701AA2C8D7009B2FDE /* AUXWaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F496F1AA2C8D7009B2FDE /* AUXWaveTests.swift */; };
 		AE2F49841AA2D124009B2FDE /* AUXWaveGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2F49821AA2D124009B2FDE /* AUXWaveGradient.png */; };
 		AE2F49851AA2D124009B2FDE /* AUXWaveLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2F49831AA2D124009B2FDE /* AUXWaveLogo.png */; };
+		AE2F498B1AA2D973009B2FDE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2F498A1AA2D973009B2FDE /* AVFoundation.framework */; };
+		AE2F498D1AA2D979009B2FDE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2F498C1AA2D979009B2FDE /* MediaPlayer.framework */; };
+		AE2F498F1AA2D984009B2FDE /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2F498E1AA2D984009B2FDE /* MultipeerConnectivity.framework */; };
+		AE2F49911AA2DD6C009B2FDE /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F49901AA2DD6C009B2FDE /* ScannerViewController.swift */; };
+		AE2F49C51AA39985009B2FDE /* ScannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F49C41AA39985009B2FDE /* ScannerTableViewCell.swift */; };
+		AE8B74B11AA56BBE00D61DD9 /* AUXWaveDefaultDJ.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8B74B01AA56BBE00D61DD9 /* AUXWaveDefaultDJ.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE2641601AA3D79A00EC9AAC /* DJInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJInformationViewController.swift; sourceTree = "<group>"; };
+		AE2641661AA4132900EC9AAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AE26416C1AA4ECE200EC9AAC /* Broadway_-_Contexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Broadway_-_Contexture.jpg"; sourceTree = "<group>"; };
 		AE2F49541AA2C8D7009B2FDE /* AUXWave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AUXWave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2F49581AA2C8D7009B2FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE2F49591AA2C8D7009B2FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +52,12 @@
 		AE2F496F1AA2C8D7009B2FDE /* AUXWaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUXWaveTests.swift; sourceTree = "<group>"; };
 		AE2F49821AA2D124009B2FDE /* AUXWaveGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AUXWaveGradient.png; sourceTree = "<group>"; };
 		AE2F49831AA2D124009B2FDE /* AUXWaveLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AUXWaveLogo.png; sourceTree = "<group>"; };
+		AE2F498A1AA2D973009B2FDE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AE2F498C1AA2D979009B2FDE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		AE2F498E1AA2D984009B2FDE /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		AE2F49901AA2DD6C009B2FDE /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		AE2F49C41AA39985009B2FDE /* ScannerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerTableViewCell.swift; sourceTree = "<group>"; };
+		AE8B74B01AA56BBE00D61DD9 /* AUXWaveDefaultDJ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AUXWaveDefaultDJ.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2641671AA4132900EC9AAC /* QuartzCore.framework in Frameworks */,
+				AE2F498B1AA2D973009B2FDE /* AVFoundation.framework in Frameworks */,
+				AE2F498D1AA2D979009B2FDE /* MediaPlayer.framework in Frameworks */,
+				AE2F498F1AA2D984009B2FDE /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +85,10 @@
 		AE2F494B1AA2C8D7009B2FDE = {
 			isa = PBXGroup;
 			children = (
+				AE2641661AA4132900EC9AAC /* QuartzCore.framework */,
+				AE2F498E1AA2D984009B2FDE /* MultipeerConnectivity.framework */,
+				AE2F498C1AA2D979009B2FDE /* MediaPlayer.framework */,
+				AE2F498A1AA2D973009B2FDE /* AVFoundation.framework */,
 				AE2F49561AA2C8D7009B2FDE /* AUXWave */,
 				AE2F496C1AA2C8D7009B2FDE /* AUXWaveTests */,
 				AE2F49551AA2C8D7009B2FDE /* Products */,
@@ -84,6 +110,9 @@
 				AE2F49791AA2CE03009B2FDE /* Images */,
 				AE2F49591AA2C8D7009B2FDE /* AppDelegate.swift */,
 				AE2F495B1AA2C8D7009B2FDE /* ViewController.swift */,
+				AE2F49901AA2DD6C009B2FDE /* ScannerViewController.swift */,
+				AE2F49C41AA39985009B2FDE /* ScannerTableViewCell.swift */,
+				AE2641601AA3D79A00EC9AAC /* DJInformationViewController.swift */,
 				AE2F495D1AA2C8D7009B2FDE /* Main.storyboard */,
 				AE2F49601AA2C8D7009B2FDE /* Images.xcassets */,
 				AE2F49621AA2C8D7009B2FDE /* LaunchScreen.xib */,
@@ -120,6 +149,8 @@
 		AE2F49791AA2CE03009B2FDE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AE8B74B01AA56BBE00D61DD9 /* AUXWaveDefaultDJ.png */,
+				AE26416C1AA4ECE200EC9AAC /* Broadway_-_Contexture.jpg */,
 				AE2F49821AA2D124009B2FDE /* AUXWaveGradient.png */,
 				AE2F49831AA2D124009B2FDE /* AUXWaveLogo.png */,
 			);
@@ -206,6 +237,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE26416D1AA4ECE200EC9AAC /* Broadway_-_Contexture.jpg in Resources */,
+				AE8B74B11AA56BBE00D61DD9 /* AUXWaveDefaultDJ.png in Resources */,
 				AE2F49851AA2D124009B2FDE /* AUXWaveLogo.png in Resources */,
 				AE2F495F1AA2C8D7009B2FDE /* Main.storyboard in Resources */,
 				AE2F49841AA2D124009B2FDE /* AUXWaveGradient.png in Resources */,
@@ -230,6 +263,9 @@
 			files = (
 				AE2F495C1AA2C8D7009B2FDE /* ViewController.swift in Sources */,
 				AE2F495A1AA2C8D7009B2FDE /* AppDelegate.swift in Sources */,
+				AE2F49C51AA39985009B2FDE /* ScannerTableViewCell.swift in Sources */,
+				AE2641611AA3D79A00EC9AAC /* DJInformationViewController.swift in Sources */,
+				AE2F49911AA2DD6C009B2FDE /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
