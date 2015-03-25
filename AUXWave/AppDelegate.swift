@@ -7,18 +7,35 @@
 //
 
 import UIKit
+import AVFoundation
 
 let kServiceTypeAUXWave = "AUXWave"
 let kDefaultDJImage = UIImage(named: "AUXWaveDefaultDJ")
+let kAUXWaveServiceOffImage = UIImage(named: "AUXWaveServiceOff")
+let kAUXWaveServiceOnImage = UIImage(named: "AUXWaveServiceOn")
+let kAUXWaveTintColor = UIColor(red: 255.0 / 255.0, green: 45.0 / 255.0, blue: 85.0 / 255.0, alpha: 255.0 / 255.0)
+let kAlbumArtworkSize = CGSizeMake(256.0, 256.0)
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // FacebookSDK documentation says to do this :P
+        FBLoginView.classForCoder()
+        FBProfilePictureView.classForCoder()
+        
+        // Get audio seesion
+        let audioSession = AVAudioSession.sharedInstance()
+        
+        // Activate session for background playback
+        if audioSession.setCategory(AVAudioSessionCategoryPlayback, error: nil) {
+            audioSession.setActive(true, error: nil)
+        }
         
         return true
     }
@@ -39,6 +56,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        // FacebookSDK documentation says to do this :P
+        FBAppEvents.activateApp()
     }
 
     func applicationWillTerminate(application: UIApplication) {
@@ -48,7 +68,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidReceiveMemoryWarning(application: UIApplication) {
         // Dispose of any resources that can be recreated.
         
-        FacebookProfileImageView.clearImageCache()
+        // Clear caches
+        PlaylistItem.clearImageCache()
     }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        
+        // FacebookSDK documentation says to do this :P
+        return FBAppCall.handleOpenURL(url, sourceApplication: sourceApplication)
+    }
+    
 }
 

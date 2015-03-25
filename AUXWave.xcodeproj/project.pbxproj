@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE1567751AB601CB00551D4B /* MediaItemExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1567741AB601CB00551D4B /* MediaItemExporter.swift */; };
 		AE2641611AA3D79A00EC9AAC /* DJInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2641601AA3D79A00EC9AAC /* DJInformationViewController.swift */; };
-		AE2641671AA4132900EC9AAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2641661AA4132900EC9AAC /* QuartzCore.framework */; };
 		AE26416D1AA4ECE200EC9AAC /* Broadway_-_Contexture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE26416C1AA4ECE200EC9AAC /* Broadway_-_Contexture.jpg */; };
 		AE2F495A1AA2C8D7009B2FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F49591AA2C8D7009B2FDE /* AppDelegate.swift */; };
 		AE2F495C1AA2C8D7009B2FDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F495B1AA2C8D7009B2FDE /* ViewController.swift */; };
@@ -23,8 +23,19 @@
 		AE2F498F1AA2D984009B2FDE /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2F498E1AA2D984009B2FDE /* MultipeerConnectivity.framework */; };
 		AE2F49911AA2DD6C009B2FDE /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F49901AA2DD6C009B2FDE /* ScannerViewController.swift */; };
 		AE2F49C51AA39985009B2FDE /* ScannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F49C41AA39985009B2FDE /* ScannerTableViewCell.swift */; };
-		AE339BBE1AA61FA4000CB4CC /* FacebookProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE339BBD1AA61FA4000CB4CC /* FacebookProfileImageView.swift */; };
+		AE37B94F1AC32D3E00971FAE /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE37B94E1AC32D3E00971FAE /* FacebookSDK.framework */; };
+		AE3D4B631AB4C1F400238F96 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3D4B621AB4C1F400238F96 /* RequestsViewController.swift */; };
+		AE3D4B691AB4C37300238F96 /* AUXWaveServiceOff.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3D4B671AB4C37300238F96 /* AUXWaveServiceOff.png */; };
+		AE3D4B6E1AB4E3DF00238F96 /* AUXWaveServiceOn.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3D4B6D1AB4E3DF00238F96 /* AUXWaveServiceOn.png */; };
+		AE3D4B721AB5052F00238F96 /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3D4B711AB5052F00238F96 /* UserState.swift */; };
+		AE58424B1AB4A8FC00A4721F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2641661AA4132900EC9AAC /* QuartzCore.framework */; };
 		AE8B74B11AA56BBE00D61DD9 /* AUXWaveDefaultDJ.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8B74B01AA56BBE00D61DD9 /* AUXWaveDefaultDJ.png */; };
+		AED9E3921AB51F090071DE9E /* DJService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED9E3911AB51F090071DE9E /* DJService.swift */; };
+		AEDCE7671AB36B1200A558E7 /* PlaylistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDCE7661AB36B1200A558E7 /* PlaylistItem.swift */; };
+		AEDCE76F1AB37DF600A558E7 /* PlaylistPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDCE76E1AB37DF600A558E7 /* PlaylistPlayer.swift */; };
+		AEF282391ABD06270083CC55 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF282381ABD06270083CC55 /* CoreMedia.framework */; };
+		AEF7C2D21AB3EC3600BE907F /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF7C2D11AB3EC3600BE907F /* PlaylistTableViewCell.swift */; };
+		AEF7C2D41AB4678B00BE907F /* PlayerControlBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF7C2D31AB4678B00BE907F /* PlayerControlBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE1567741AB601CB00551D4B /* MediaItemExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItemExporter.swift; sourceTree = "<group>"; };
 		AE2641601AA3D79A00EC9AAC /* DJInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJInformationViewController.swift; sourceTree = "<group>"; };
 		AE2641661AA4132900EC9AAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AE26416C1AA4ECE200EC9AAC /* Broadway_-_Contexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Broadway_-_Contexture.jpg"; sourceTree = "<group>"; };
@@ -58,8 +70,19 @@
 		AE2F498E1AA2D984009B2FDE /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		AE2F49901AA2DD6C009B2FDE /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		AE2F49C41AA39985009B2FDE /* ScannerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerTableViewCell.swift; sourceTree = "<group>"; };
-		AE339BBD1AA61FA4000CB4CC /* FacebookProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookProfileImageView.swift; sourceTree = "<group>"; };
+		AE37B94E1AC32D3E00971FAE /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = Frameworks/FacebookSDK.framework; sourceTree = "<group>"; };
+		AE3D4B621AB4C1F400238F96 /* RequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
+		AE3D4B641AB4C26300238F96 /* AUXWave-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AUXWave-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE3D4B671AB4C37300238F96 /* AUXWaveServiceOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AUXWaveServiceOff.png; sourceTree = "<group>"; };
+		AE3D4B6D1AB4E3DF00238F96 /* AUXWaveServiceOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AUXWaveServiceOn.png; sourceTree = "<group>"; };
+		AE3D4B711AB5052F00238F96 /* UserState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
 		AE8B74B01AA56BBE00D61DD9 /* AUXWaveDefaultDJ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AUXWaveDefaultDJ.png; sourceTree = "<group>"; };
+		AED9E3911AB51F090071DE9E /* DJService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJService.swift; sourceTree = "<group>"; };
+		AEDCE7661AB36B1200A558E7 /* PlaylistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistItem.swift; sourceTree = "<group>"; };
+		AEDCE76E1AB37DF600A558E7 /* PlaylistPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistPlayer.swift; sourceTree = "<group>"; };
+		AEF282381ABD06270083CC55 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		AEF7C2D11AB3EC3600BE907F /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
+		AEF7C2D31AB4678B00BE907F /* PlayerControlBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerControlBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE2641671AA4132900EC9AAC /* QuartzCore.framework in Frameworks */,
+				AE37B94F1AC32D3E00971FAE /* FacebookSDK.framework in Frameworks */,
+				AEF282391ABD06270083CC55 /* CoreMedia.framework in Frameworks */,
+				AE58424B1AB4A8FC00A4721F /* QuartzCore.framework in Frameworks */,
 				AE2F498B1AA2D973009B2FDE /* AVFoundation.framework in Frameworks */,
 				AE2F498D1AA2D979009B2FDE /* MediaPlayer.framework in Frameworks */,
 				AE2F498F1AA2D984009B2FDE /* MultipeerConnectivity.framework in Frameworks */,
@@ -87,6 +112,8 @@
 		AE2F494B1AA2C8D7009B2FDE = {
 			isa = PBXGroup;
 			children = (
+				AE37B94E1AC32D3E00971FAE /* FacebookSDK.framework */,
+				AEF282381ABD06270083CC55 /* CoreMedia.framework */,
 				AE2641661AA4132900EC9AAC /* QuartzCore.framework */,
 				AE2F498E1AA2D984009B2FDE /* MultipeerConnectivity.framework */,
 				AE2F498C1AA2D979009B2FDE /* MediaPlayer.framework */,
@@ -112,10 +139,17 @@
 				AE2F49791AA2CE03009B2FDE /* Images */,
 				AE2F49591AA2C8D7009B2FDE /* AppDelegate.swift */,
 				AE2F495B1AA2C8D7009B2FDE /* ViewController.swift */,
+				AEDCE7661AB36B1200A558E7 /* PlaylistItem.swift */,
+				AEF7C2D11AB3EC3600BE907F /* PlaylistTableViewCell.swift */,
+				AEDCE76E1AB37DF600A558E7 /* PlaylistPlayer.swift */,
 				AE2F49901AA2DD6C009B2FDE /* ScannerViewController.swift */,
 				AE2F49C41AA39985009B2FDE /* ScannerTableViewCell.swift */,
 				AE2641601AA3D79A00EC9AAC /* DJInformationViewController.swift */,
-				AE339BBD1AA61FA4000CB4CC /* FacebookProfileImageView.swift */,
+				AE1567741AB601CB00551D4B /* MediaItemExporter.swift */,
+				AEF7C2D31AB4678B00BE907F /* PlayerControlBar.swift */,
+				AE3D4B621AB4C1F400238F96 /* RequestsViewController.swift */,
+				AED9E3911AB51F090071DE9E /* DJService.swift */,
+				AE3D4B711AB5052F00238F96 /* UserState.swift */,
 				AE2F495D1AA2C8D7009B2FDE /* Main.storyboard */,
 				AE2F49601AA2C8D7009B2FDE /* Images.xcassets */,
 				AE2F49621AA2C8D7009B2FDE /* LaunchScreen.xib */,
@@ -128,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				AE2F49581AA2C8D7009B2FDE /* Info.plist */,
+				AE3D4B641AB4C26300238F96 /* AUXWave-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -152,6 +187,8 @@
 		AE2F49791AA2CE03009B2FDE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AE3D4B671AB4C37300238F96 /* AUXWaveServiceOff.png */,
+				AE3D4B6D1AB4E3DF00238F96 /* AUXWaveServiceOn.png */,
 				AE8B74B01AA56BBE00D61DD9 /* AUXWaveDefaultDJ.png */,
 				AE26416C1AA4ECE200EC9AAC /* Broadway_-_Contexture.jpg */,
 				AE2F49821AA2D124009B2FDE /* AUXWaveGradient.png */,
@@ -209,6 +246,11 @@
 				TargetAttributes = {
 					AE2F49531AA2C8D7009B2FDE = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					AE2F49681AA2C8D7009B2FDE = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -240,11 +282,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3D4B6E1AB4E3DF00238F96 /* AUXWaveServiceOn.png in Resources */,
 				AE26416D1AA4ECE200EC9AAC /* Broadway_-_Contexture.jpg in Resources */,
 				AE8B74B11AA56BBE00D61DD9 /* AUXWaveDefaultDJ.png in Resources */,
 				AE2F49851AA2D124009B2FDE /* AUXWaveLogo.png in Resources */,
 				AE2F495F1AA2C8D7009B2FDE /* Main.storyboard in Resources */,
 				AE2F49841AA2D124009B2FDE /* AUXWaveGradient.png in Resources */,
+				AE3D4B691AB4C37300238F96 /* AUXWaveServiceOff.png in Resources */,
 				AE2F49641AA2C8D7009B2FDE /* LaunchScreen.xib in Resources */,
 				AE2F49611AA2C8D7009B2FDE /* Images.xcassets in Resources */,
 			);
@@ -265,11 +309,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE2F495C1AA2C8D7009B2FDE /* ViewController.swift in Sources */,
+				AEDCE7671AB36B1200A558E7 /* PlaylistItem.swift in Sources */,
+				AEF7C2D41AB4678B00BE907F /* PlayerControlBar.swift in Sources */,
 				AE2F495A1AA2C8D7009B2FDE /* AppDelegate.swift in Sources */,
 				AE2F49C51AA39985009B2FDE /* ScannerTableViewCell.swift in Sources */,
 				AE2641611AA3D79A00EC9AAC /* DJInformationViewController.swift in Sources */,
-				AE339BBE1AA61FA4000CB4CC /* FacebookProfileImageView.swift in Sources */,
+				AE1567751AB601CB00551D4B /* MediaItemExporter.swift in Sources */,
+				AEDCE76F1AB37DF600A558E7 /* PlaylistPlayer.swift in Sources */,
 				AE2F49911AA2DD6C009B2FDE /* ScannerViewController.swift in Sources */,
+				AE3D4B631AB4C1F400238F96 /* RequestsViewController.swift in Sources */,
+				AED9E3921AB51F090071DE9E /* DJService.swift in Sources */,
+				AEF7C2D21AB3EC3600BE907F /* PlaylistTableViewCell.swift in Sources */,
+				AE3D4B721AB5052F00238F96 /* UserState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,10 +445,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ncvitak/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = AUXWave/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AUXWave/AUXWave-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -405,10 +465,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ncvitak/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = AUXWave/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AUXWave/AUXWave-Bridging-Header.h";
 			};
 			name = Release;
 		};
