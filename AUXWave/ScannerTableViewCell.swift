@@ -8,11 +8,24 @@
 
 import UIKit
 import QuartzCore
+import MultipeerConnectivity
 
 class ScannerTableViewCell: UITableViewCell {
 
-    @IBOutlet var djImageView: FacebookProfileImageView?
-    @IBOutlet var djLabel: UILabel?
+    var peerID: MCPeerID? {
+        didSet {
+            djLabel?.text = peerID?.displayName
+        }
+    }
+    
+    var facebookID: String? {
+        didSet {
+            djImageView?.profileID = facebookID
+        }
+    }
+    
+    @IBOutlet private var djImageView: FBProfilePictureView?
+    @IBOutlet private var djLabel: UILabel?
     
     override func awakeFromNib() {
         super.awakeFromNib()

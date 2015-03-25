@@ -12,23 +12,28 @@ import MultipeerConnectivity
 class ScannerViewController: UITableViewController, UITableViewDataSource, MCNearbyServiceBrowserDelegate {
     
     var peerID: MCPeerID?
-    var session: MCSession?
     
     var browser: MCNearbyServiceBrowser?
     
-    var discoveredPeers: [MCPeerID : [NSObject : AnyObject]] = [:]
+    var discoveredPeers: [MCPeerID : [NSObject : AnyObject]?] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        peerID = MCPeerID(displayName: UIDevice.currentDevice().name)
-        session = MCSession(peer: peerID)
         
+        let userState = UserState.localUserState()
+        
+        peerID = MCPeerID(displayName: userState.displayName)
         browser = MCNearbyServiceBrowser(peer: peerID, serviceType: kServiceTypeAUXWave)
+        browser?.delegate = self
         
         // Sample Data
-        discoveredPeers[MCPeerID(displayName: "Nico Cvitak")] = ["facebookID" : "ncvitak"]
+        //discoveredPeers[MCPeerID(displayName: "Nico Cvitak")] = ["facebookID" : "ncvitak"]
+        
+        // Start searching for DJs when the view is visible
+        browser?.startBrowsingForPeers()
+        println("load")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -37,13 +42,12 @@ class ScannerViewController: UITableViewController, UITableViewDataSource, MCNea
             self.tableView.deselectRowAtIndexPath(selectedRow, animated: animated)
         }
         
-        // Start searching for DJs when the view is visible
-        browser?.startBrowsingForPeers()
+        
     }
     
     override func viewWillDisappear(animated: Bool) {
         // Stop searching for DJs when the view is not visible
-        browser?.stopBrowsingForPeers()
+        //browser?.stopBrowsingForPeers()
     }
     
     override func didReceiveMemoryWarning() {
@@ -63,9 +67,10 @@ class ScannerViewController: UITableViewController, UITableViewDataSource, MCNea
         if let djInformationViewController = segue.destinationViewController as? DJInformationViewController {
             
             if let selectedCell = sender as? ScannerTableViewCell {
-                djInformationViewController.djImage = selectedCell.djImageView?.image
-                djInformationViewController.djFacebookID = selectedCell.djImageView?.facebookID
-                djInformationViewController.djName = selectedCell.djLabel?.text
+                djInformationViewController.peerID = selectedCell.peerID
+                djInformationViewController.djFacebookID = selectedCell.facebookID
+                djInformationViewController.djName = selectedCell.peerID?.displayName
+                djInformationViewController.browser = self.browser
             }
             
         }
@@ -83,13 +88,10 @@ class ScannerViewController: UITableViewController, UITableViewDataSource, MCNea
         let cell = tableView.dequeueReusableCellWithIdentifier("ScannerCell") as ScannerTableViewCell
         
         // Initialize default properties
-        cell.djLabel?.text = peerID.displayName
-        cell.djImageView?.image = kDefaultDJImage
+        cell.peerID = peerID
         
         // Load information from Facebook
-        if let facebookID = discoveryInfo?["facebookID"] as? String {
-            cell.djImageView?.facebookID = facebookID
-        }
+        cell.facebookID = discoveryInfo??["facebookID"] as? String
         
         return cell
     }
@@ -103,19 +105,33 @@ class ScannerViewController: UITableViewController, UITableViewDataSource, MCNea
     */
     
     func browser(browser: MCNearbyServiceBrowser!, foundPeer peerID: MCPeerID!, withDiscoveryInfo info: [NSObject : AnyObject]!) {
+        println("found: \(peerID.displayName)")
+        tableView.beginUpdates()
+        
         discoveredPeers[peerID] = info
+        
+        if let index = find(discoveredPeers.keys.array, peerID) {
+            tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: index, inSection: 0)], withRowAnimation: .Fade)
+        }
+        
+        tableView.endUpdates()
     }
     
     func browser(browser: MCNearbyServiceBrowser!, lostPeer peerID: MCPeerID!) {
+        
+        tableView.beginUpdates()
+        
+        if let index = find(discoveredPeers.keys.array, peerID) {
+            tableView.deleteRowsAtIndexPaths([NSIndexPath(forRow: index, inSection: 0)], withRowAnimation: .Fade)
+        }
+        
         discoveredPeers.removeValueForKey(peerID)
+            
+        tableView.endUpdates()
     }
     
     /*
     // MARK: - Received Actions
     */
-    
-    @IBAction func popToRootViewController() {
-        navigationController?.popToRootViewControllerAnimated(true)
-    }
-    
+
 }
